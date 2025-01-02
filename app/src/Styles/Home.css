@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.leftMenu-container {
+  width: 65%;
+  background-color: #ded4c3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoIcon {
+  max-height: 450px;
+  max-width: 500px;
+  border: 1px solid #545454;
+  border-radius: 25%;
+  margin: 10px 0px 20px 0px;
+}
+
+.logoText {
+  font-size: 85px;
+  margin: 0;
+  margin-top: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.logoSubText {
+  font-size: 35px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.rightMenu-container {
+  width: 35%;
+  background-color: #545454;
+}
+
+.menu-section {
+  margin-top: 25%;
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.menu-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-section hr {
+  width: 75%;
+}
+
+.menu-section li {
+  margin: 25px 0 25px 0;
+  font-size: 30px;
+  color: #ded4c3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-section p {
+  font-size: 16.5px;
+  color: white;
+  padding: 0 20px 0 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.menu-section li:hover {
+  cursor: pointer;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.registerImg {
+  margin-top: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.registerImg:hover {
+  border: 1px solid #ded4c3;
+  transition: all 0.25s;
+}
