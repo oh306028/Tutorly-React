@@ -1,10 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import { Home } from "./Components/Home.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
