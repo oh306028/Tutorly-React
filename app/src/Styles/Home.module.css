@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(-2%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.leftMenuContainer {
+  width: 65%;
+  background-color: #ded4c3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoIcon {
+  max-height: 450px;
+  max-width: 500px;
+  border: 1px solid #545454;
+  border-radius: 25%;
+  margin: 10px 0px 20px 0px;
+  opacity: 0;
+  animation: slideInLeft 1.5s ease-out forwards;
+
+  -webkit-box-shadow: 15px 15px 25px -22px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 15px 19px 49px -22px rgba(0, 0, 0, 1);
+  box-shadow: 15px 19px 30px -22px rgba(0, 0, 0, 1);
+}
+
+.logoText {
+  font-size: 85px;
+  margin: 0;
+  margin-top: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  opacity: 0;
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.logoSubText {
+  font-size: 35px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  opacity: 0;
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.rightMenuContainer {
+  width: 35%;
+  background-color: #545454;
+}
+
+.menuSection {
+  margin-top: 25%;
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.menuSection ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menuSection hr {
+  width: 75%;
+}
+
+.menuSection li {
+  margin: 25px 0 25px 0;
+  font-size: 30px;
+  color: #ded4c3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuSection p {
+  font-size: 16.5px;
+  color: white;
+  padding: 0 20px 0 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+.menuSection li:hover {
+  cursor: pointer;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.registerImg {
+  margin-top: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.registerImg:hover {
+  border: 1px solid #ded4c3;
+  transition: all 0.25s;
+}
