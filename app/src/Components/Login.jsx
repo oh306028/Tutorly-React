@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import styles from "../Styles/Login.module.css";
 
 const Login = () => {
   const [error, setError] = useState({
@@ -68,47 +69,68 @@ const Login = () => {
   };
   return (
     <>
-      <h1>Tutorly.com</h1>
-      <section>
-        Tutorly is a platform designed to seamlessly connect students with
-        teachers. The service allows teachers to create posts advertising their
-        classes or tutoring sessions, which students can easily browse and sign
-        up for based on their specific needs and preferences.
-      </section>
+      <div className={styles.container}>
+        <div className={styles.leftContainer}>
+          <h1 className={styles.logoText}>Tutorly.com</h1>
+          <div>
+            <section>
+              Tutorly is a platform designed to seamlessly connect students with
+              teachers. The service allows teachers to create posts advertising
+              their classes or tutoring sessions, which students can easily
+              browse and sign up for based on their specific needs and
+              preferences.
+            </section>
 
-      <section>
-        For students, Tutorly.com simplifies the search for the perfect teacher
-        by offering a wide selection of educators, each with detailed posts
-        describing their expertise, teaching style, and availability. Whether
-        you're looking for help with a specific subject, skill, or exam
-        preparation, you can quickly find and join sessions tailored to your
-        goals.
-      </section>
+            <section>
+              For students, Tutorly.com simplifies the search for the perfect
+              teacher by offering a wide selection of educators, each with
+              detailed posts describing their expertise, teaching style, and
+              availability. Whether you're looking for help with a specific
+              subject, skill, or exam preparation, you can quickly find and join
+              sessions tailored to your goals.
+            </section>
 
-      <section>
-        For teachers, Tutorly.com provides an efficient way to reach their
-        target audience. By creating engaging posts, teachers can attract
-        students who align with their expertise, ensuring that their classes
-        fill up quickly and meet their objectives.
-      </section>
+            <section>
+              For teachers, Tutorly.com provides an efficient way to reach their
+              target audience. By creating engaging posts, teachers can attract
+              students who align with their expertise, ensuring that their
+              classes fill up quickly and meet their objectives.
+            </section>
 
-      <section>
-        Tutorly.com is the ideal solution for creating meaningful, productive
-        connections between students and teachers, helping everyone achieve
-        their educational goals with ease.
-      </section>
-
-      <input placeholder="Email..." onChange={handleLoginChange} />
-      {error.login && <span>{error.login}</span>}
-      <input
-        type="password"
-        placeholder="Password..."
-        onChange={handlePasswordChange}
-      />
-      {error.password && <span>{error.password}</span>}
-      {error.notFound && <span>{error.notFound}</span>}
-      <button onClick={handleLoginButton}>Login</button>
-      <NavLink to="/">Back</NavLink>
+            <section>
+              Tutorly.com is the ideal solution for creating meaningful,
+              productive connections between students and teachers, helping
+              everyone achieve their educational goals with ease.
+            </section>
+          </div>
+        </div>
+        <div className={styles.rightContainer}>
+          <div className={styles.form}>
+            <div>
+              <input placeholder="Email..." onChange={handleLoginChange} />
+            </div>
+            {error.login && <span className={styles.error}>{error.login}</span>}
+            <div>
+              <input
+                type="password"
+                placeholder="Password..."
+                onChange={handlePasswordChange}
+              />
+            </div>
+            {error.password && (
+              <span className={styles.error}>{error.password}</span>
+            )}
+            {error.notFound && (
+              <span className={styles.error}>{error.notFound}</span>
+            )}
+            <button onClick={handleLoginButton}>Login</button>
+            <NavLink to="/">Back</NavLink>
+          </div>
+        </div>
+      </div>
+      <div className={styles.footer}>
+        ©Tutorly.com - Connecting students with the perfect teachers.
+      </div>
     </>
   );
 };
