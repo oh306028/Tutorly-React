@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  background-color: #ded4c3;
+  height: 94vh;
+}
+
+.footer {
+  background-color: #545454;
+  height: 6vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14px;
+}
+
+.rightContainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ded4c3;
+  padding: 9px;
+  border: 1px solid black;
+  -webkit-box-shadow: 15px 15px 25px -22px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 15px 19px 49px -22px rgba(0, 0, 0, 1);
+  box-shadow: 15px 19px 30px -22px rgba(0, 0, 0, 1);
+  width: 40%;
+}
+
+.logoText {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+}
+
+section {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 5px;
+  font-size: 19px;
+  color: black;
+}
+
+.form input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 19px;
+  padding: 4px;
+  margin: 3px 0px;
+  width: 285px;
+}
+
+.form button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 3px;
+  font-size: 17px;
+  background-color: #545454;
+  color: white;
+  border: 1px solid black;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: #686767;
+  transition: ease 0.35s;
+}
+
+.error {
+  color: rgb(240, 94, 94);
+  text-align: center;
+}
