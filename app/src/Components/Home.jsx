@@ -49,9 +49,9 @@ export const Home = () => {
                     Register as a <b>student</b> and start your educational
                     journey! Join our community and search for your dream tutor!
                   </p>
-                  <a href="google.com">
+                  <NavLink to="/accounts/register/student">
                     <img className={styles.registerImg} src={registerImg}></img>
-                  </a>
+                  </NavLink>
                 </>
               )}
             </li>
@@ -65,9 +65,9 @@ export const Home = () => {
                     educational offers! Join our tutors family and create your
                     own bussiness!
                   </p>
-                  <a href="google.com">
+                  <NavLink to="/accounts/register/teacher">
                     <img className={styles.registerImg} src={registerImg}></img>
-                  </a>
+                  </NavLink>
                 </>
               )}
             </li>
